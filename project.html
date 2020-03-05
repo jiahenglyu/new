@@ -1,0 +1,85 @@
+<!--
+    Jiaheng Lyu
+    January 27, 2020
+    CS290
+    Reference:
+        1) HTML Lists
+            https://www.w3schools.com/html/html_lists.asp
+        2) W3.CSS Slideshow
+            https://www.w3schools.com/w3css/w3css_slideshow.asp
+        
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF=8">
+    <title>New Mandarin</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <header role="banner" class="hat">
+        <img src="image/mandarin-chinese-restaurant.jpg" alt="Mandarin Chinese Restaurant">
+        <h1 class="name">New Mandarin</h1>
+        <ul class="main-menu">
+            <li class="item">
+                <a href="project.html" class="link">Home</a>
+            </li>
+            <li class="item">
+                <a href="foods/foods.html" class="link" >Foods</a>
+            </li>
+            <li class="item">
+                <a href="order/order.html" class="link">Order</a>
+            </li>
+            <li class="item">
+                <a href="information/information.html" class="link">Information</a>
+            </li>
+        </ul>
+    </header>
+    <div class="mySlides">
+        <img src="image/home-1.jfif">
+        <div class="context">
+            <h2>Orange Chicken</h2>
+        </div>
+    </div>
+
+    <div class="mySlides">
+        <img src="image/home-2.jpg">
+        <div class="context">
+            <h2>Dumpling</h2>
+        </div>
+    </div>
+
+    <div class="mySlides">
+        <img src="image/home-3.jpg">
+        <div class="context">
+            <h2>Steam fish</h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="address">
+        <h2>Address</h2>
+        <p style="margin-bottom: 4px ">2235 SW 7th, Corvallis</p>
+        <h2>Phone Number</h2>
+        <p>5417458826</p>
+    </div>
+    <div class="clearfix"></div>
+    <button class="slide-button" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="slide-button" onclick="plusDivs(1)">&#10095;</button>
+ 
+    <span class="badge" onclick="currentDiv(1)"></span>
+    <span class="badge" onclick="currentDiv(2)"></span>
+    <span class="badge" onclick="currentDiv(3)"></span>
+
+    <script src="project.js"></script>
+
+
+
+
+</body>
+
+</html>
